@@ -25,6 +25,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'canonical-rails', '~> 0.0.4'
   s.add_dependency 'jquery-rails',    '~> 4.0.3'
   s.add_dependency 'sprockets-rails', '~> 2.2'
+  
+  s.add_dependency 'route_translator'
 
   s.add_development_dependency 'capybara-accessible'
 end
