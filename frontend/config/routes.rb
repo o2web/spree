@@ -2,8 +2,10 @@ Spree::Core::Engine.add_routes do
 
   root :to => 'home#index'
 
-  resources :products, :only => [:index, :show]
-
+  localized do
+    resources :products, :only => [:index, :show]
+  end
+  
   get '/locale/set', :to => 'locale#set'
 
   # non-restful checkout stuff
